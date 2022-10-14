@@ -1,0 +1,1445 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Change page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" type="image/png" href='{% static "mainsite/img/Icon.svg" %}' />
+    <link href='{% static "mainsite/css/registration/login_base_style.css" %}' rel="stylesheet">
+    <link href='{% static "mainsite/css/registration/style_1.css" %}' rel="stylesheet">
+    <link href='{% static "mainsite/css/registration/style_2.css" %}' rel="stylesheet">
+    <link href='{% static "mainsite/css/phonepage_/Phonepage.css" %}' rel="stylesheet">
+
+
+
+
+    <link href='{% static "mainsite/css/registration/login_base_style.css" %}' rel="stylesheet">
+    <link href='{% static "mainsite/css/faq/faq.css" %}' rel="stylesheet">
+    <link href='{% static "mainsite/css/news/news.css" %}' rel="stylesheet">
+    <link href='{% static "mainsite/css/news/news_list.css" %}' rel="stylesheet">
+    <link href='{% static "mainsite/css/incoming/incoming.css" %}' rel="stylesheet">
+    <link href='https://fonts.google.com/specimen/Inter#standard-styles' rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link href='{% static "mainsite/css/registration/preloader.css" %}' rel="stylesheet">
+
+    <link href='{% static "mainsite/css/profile/profile.css" %}' rel="stylesheet">
+    <link href='{% static "mainsite/css/registration/style_3.css" %}' rel="stylesheet">
+    <link href='{% static "mainsite/css/registration/style_4.css" %}' rel="stylesheet">
+
+    <script src="{% static 'mainsite/js/registration/translate.js' %}"></script>
+    <script src="{% static 'mainsite/js/registration/hidden_block_leng.js' %}"></script>
+    <script src="{% static 'mainsite/js/home_page/hidden_block_mainPage.js' %}"></script>
+    <script src="{% static 'mainsite/js/them/them.js' %}"></script>
+    <script src="{% static 'mainsite/js/registration/Them.js' %}">
+    </script>
+
+</head>
+
+<body class="body indexEnterWindow">
+    <div class="content">
+        <div class="Phone_Head">
+            <div class="main_icon_logo_flexbox">
+                <div class="main_icon_logo"></div>
+            </div>
+            <div class="phone_header_center">
+                <div class="phone_header_presen">
+                    <div class="phone_header_presen_ico"></div>
+                </div>
+
+                <div class="phone_header_question">
+                    <div class="phone_header_question_ico"></div>
+                </div>
+
+                <div class="phone_header_notice">
+                    <div class="phone_header_notice_ico"></div>
+                </div>
+            </div>
+            <div class="phone_header_home">
+                <div class="phone_header_home_ico"></div>
+            </div>
+        </div>
+        {% block content %} {% endblock %}
+
+        <div class="base_content_slade5 Mtop16">
+            <div class="phone_footer">
+                <div class="phone_footer_slade1">
+                    <div class="phone_footer_slade1_upon">
+                        <div class="footer_slade1_icon"></div>
+                        <div class="footer_slade1_icon_text">
+                            <h1>Институт Международного образования КАИ</h1>
+                        </div>
+                    </div>
+                    <div class="phone_footer_slade1_down">
+                        <div class="footer_boxs_links_box_plot" style="background-color: rgb(242, 242, 242);">
+                            <div class="footer_boxs_links_box_l footer_boxs_links_box_l2 cursorP"></div>
+                        </div>
+                        <div class="footer_boxs_links_box_plot" style="background-color: rgb(242, 242, 242);">
+                            <div class="footer_boxs_links_box_l footer_boxs_links_box_l3 cursorP"></div>
+                        </div>
+                        <div class="footer_boxs_links_box_plot" style="background-color: rgb(242, 242, 242);">
+                            <div class="footer_boxs_links_box_l footer_boxs_links_box_l4 cursorP"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="phone_footer_slade2">
+                    <div class="phone_footer_slade2_h">
+                        <h1>Контактная информация</h1>
+                    </div>
+                    <div class="phone_footer_slade2_namber1">
+                        <p>+7(843)231-01-58</p>
+                        <p>ИМО</p>
+                    </div>
+                    <div class="phone_footer_slade2_namber2">
+                        <p>+7(843)231-01-58</p>
+                        <p>ИМО</p>
+                    </div>
+                    <div class="phone_footer_slade2_link">
+                        <a href="">pk@kai.ru</a>
+                        <a href="">international@kai.ru</a>
+                    </div>
+                </div>
+                <div class="phone_footer_slade3">
+                    <div class="phone_footer_slade3_adres">
+                        <h1>Адресс</h1>
+                    </div>
+                    <div class="phone_footer_slade3_ulisa">
+                        г. Казань, ул. Большая Красная, д. 55
+                    </div>
+                </div>
+            </div>
+            <div class="phone_footer_upon Mtop16">
+                <p>© Институт международного образования КНИТУ-КАИ Все права защищены 2022</p>
+                <p>© КНИТУ-КАИ Все права защищены 2022</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+
+<style>
+    .Mtop16 {
+        margin-top: 16px;
+    }
+
+    .phone_footer_upon {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .phone_footer_upon p {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 4px;
+        line-height: 151.6%;
+
+        color: #B7B7B7;
+    }
+
+    .phone_footer_slade3_ulisa {
+        font-style: normal;
+        font-weight: 500;
+
+        line-height: 134.69%;
+        /* or 8px */
+
+        text-align: right;
+        letter-spacing: 0.03em;
+
+        color: #000212;
+
+    }
+
+
+
+    .phone_footer_slade2_namber1 {
+        font-style: normal;
+        font-weight: 500;
+        line-height: 134.69%;
+        /* identical to box height, or 8px */
+
+        text-align: right;
+        letter-spacing: 0.03em;
+
+        color: #000212;
+    }
+
+    .phone_footer_slade2_namber2 {
+        font-style: normal;
+        font-weight: 500;
+        line-height: 134.69%;
+        /* identical to box height, or 8px */
+
+        text-align: right;
+        letter-spacing: 0.03em;
+
+        color: #000212;
+    }
+
+    .phone_footer_slade1_down {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+
+    .phone_footer_slade3_adres h1 {
+        font-style: normal;
+        font-weight: 400;
+
+        line-height: 134.69%;
+        /* identical to box height, or 8px */
+
+        letter-spacing: 0.03em;
+
+        color: #40414D;
+    }
+
+    .phone_footer_slade2_h h1 {
+        font-style: normal;
+        font-weight: 400;
+
+        line-height: 134.69%;
+        /* identical to box height, or 8px */
+
+        text-align: right;
+        letter-spacing: 0.03em;
+
+        color: rgba(0, 2, 18, 0.75);
+    }
+
+    .footer_slade1_icon_text h1 {
+        font-style: normal;
+        font-weight: 700;
+        line-height: 134.6%;
+        color: #000212;
+    }
+
+    .phone_footer {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: center;
+        align-content: flex-start;
+    }
+
+    .base_content_slade5 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer_slade1_icon {
+        background-image: url("{% static '/mainsite/css/home_page/cssimg/mainICON_1.svg' %}");
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    .footer_boxs_2 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+        align-content: flex-end;
+    }
+
+    .footer_boxs_5 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .footer_boxs_3 {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer_salde5 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+
+    .Mtop100 {
+        margin-top: 100px;
+    }
+
+    .body {
+        max-width: 100%;
+        margin: 0px auto;
+        /* padding: 0px 15px; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .Phone_Head {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        margin-top: 10%;
+        justify-content: center;
+        gap: 20%;
+    }
+
+    .Phone_Head {
+        width: 100%;
+    }
+
+    .Phone_Base_content {
+        /* width: 1024px; */
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        margin-top: 10%;
+        justify-content: center;
+        margin-top: 10%;
+    }
+
+
+    @media screen and (max-width:1024px) {
+        .content {
+            max-width: 90%;
+        }
+    }
+
+    @media screen and (max-width:768px) {
+        .content {
+            max-width: 90%;
+        }
+    }
+
+    @media screen and (max-width:480px) {
+        .content {
+            max-width: 90%;
+        }
+    }
+
+    @media screen and (max-width:320px) {
+        .content {
+            max-width: 90%;
+        }
+    }
+
+    .base_content_slade2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .base_content_slade2 .slade1 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .slide1_text {
+        font-family: 'Roboto';
+        /* font-style: normal; */
+        font-weight: 700;
+        font-size: 19px;
+        line-height: 200%;
+        color: #000212;
+    }
+
+    .slide1_button {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 5%;
+    }
+
+    .slide1_burron_Bxtex {
+        padding: 10px 6px 10px 6px;
+        border-radius: 10px;
+        background-color: rgba(0, 0, 0, 0);
+        color: var(--colorText);
+        font-family: var(--font-averta-cy-EB);
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        /* border: chocolate; */
+        /* border-block-color: blue; */
+        border: 2px solid #000000;
+    }
+
+    .slide1_burron_BxtexPodfac {
+        padding: 10px 30px 10px 30px;
+        border-radius: 10px;
+        background-color: rgba(0, 0, 0, 0);
+        color: var(--colorText);
+        font-family: var(--font-averta-cy-EB);
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        border: 2px solid #000000;
+    }
+
+    .Mtop31 {
+        margin-top: 31px;
+    }
+
+    .phone_header_presen_ico {
+        background-image: url('{% static "mainsite/img/phone_header_presen.svg" %}');
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100%;
+        background-size: contain;
+    }
+
+    .phone_header_question_ico {
+        background-image: url('{% static "mainsite/img/phone_header_question.svg" %}');
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100%;
+        background-size: contain;
+    }
+
+    .phone_header_notice_ico {
+        background-image: url('{% static "mainsite/img/phone_header_notice.svg" %}');
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100%;
+        background-size: contain;
+    }
+
+    .phone_header_home_ico {
+        background-image: url('{% static "mainsite/img/phone_header_home.svg" %}');
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100%;
+        background-size: contain;
+
+    }
+
+    .main_icon_logo {
+        width: 100%;
+        height: 100%;
+    }
+
+    .Lang-standart84_1 {
+        /* font-size: 60px; */
+        font-weight: 700;
+        line-height: 116.1%;
+    }
+
+    @media screen and (max-width:1024px) {
+        .phone_header_home_ico {
+            width: 94px;
+            height: 94px;
+        }
+
+        .phone_header_question_ico {
+            width: 94px;
+            height: 94px;
+        }
+
+        .phone_header_notice_ico {
+            width: 94px;
+            height: 94px;
+        }
+
+        .phone_header_presen_ico {
+            width: 94px;
+            height: 94px;
+        }
+
+        .main_icon_logo_flexbox {
+            width: 120px;
+            height: 120px;
+        }
+
+        .main_icon_logo {
+            width: 120px;
+        }
+
+        /* .footer_mainText{
+                font-weight: 500;
+                font-size: 6px;
+                line-height: 134.69%;
+                text-align: right;
+                letter-spacing: 0.03em;
+            }
+            .helpText{
+                font-weight: 400;
+                font-size: 6px;
+                line-height: 134.69%;
+                text-align: right;
+                letter-spacing: 0.03em;
+            }
+            .Memo_box_textInf_text{
+                font-size: 6px;
+                font-weight: 500;
+
+            }
+            .main_icon_logo_phoneText{
+                font-weight: 400;
+                font-size: 6px;
+                font-family: var(--font-averta-cy);
+                color: #000;
+                margin-left: 15px;
+            }
+            .footer_FM1_text{
+                color: #B7B7B7;
+                font-size: 4px;
+                font-family: var(--font-inter);
+            }
+            .link_FM2Text_p{
+                color: #B7B7B7;
+                font-size: 4px;
+                font-family: var(--font-inter);
+            } */
+    }
+
+    @media screen and (max-width:768px) {
+        .phone_header_home_ico {
+            width: 70px;
+            height: 70px;
+        }
+
+        .phone_header_question_ico {
+            width: 70px;
+            height: 70px;
+        }
+
+        .phone_header_notice_ico {
+            width: 70px;
+            height: 70px;
+        }
+
+        .phone_header_presen_ico {
+            width: 70px;
+            height: 70px;
+        }
+
+        .main_icon_logo_flexbox {
+            width: 87px;
+            height: 87px;
+        }
+
+        .main_icon_logo {
+            width: 87px;
+        }
+
+        /*  raschet */
+        .Lang-standart84_1 {
+            font-size: 60px;
+        }
+
+        .slide1_text {
+            width: 387px;
+        }
+
+        .specialty_box_displayFlex_litleBox {
+            flex-direction: row;
+            align-items: center;
+        }
+
+        .slade_specialty_box_displayFlex_litleBox {
+            width: 650px;
+        }
+
+        .AircraftIndustry1 {
+            width: 385px;
+        }
+
+        .standartStyleForimgSp {
+            width: 230px;
+        }
+
+        .base_content_slade5 {
+            padding: 1px;
+            max-width: 330px;
+        }
+
+        .phone_footer_slade1_down {
+            width: 110px;
+        }
+
+    }
+    @media screen and (max-width:425px) {
+        .Phone_Head{
+            width: 389.6px;
+        }
+        .phone_header_home_ico {
+            width: 39px;
+            height: 38px;
+        }
+
+        .phone_header_question_ico {
+            width: 39px;
+            height: 38px;
+        }
+
+        .phone_header_notice_ico {
+            width: 39px;
+            height: 38px;
+        }
+
+        .phone_header_presen_ico {
+            width: 39px;
+            height: 38px;
+        }
+
+        .main_icon_logo_flexbox {
+            width: 48.5px;
+            height: 50px;
+        }
+
+        .main_icon_logo {
+            width: 50px;
+        }
+
+/*///////////////////////////////////////330*425/360///////*/
+
+
+        .footer_mainText {
+            font-size: 7px;
+        }
+
+        .helpText {
+            font-size: 7px;
+        }
+
+        .Memo_box_textInf_text {
+            font-size: 7px;
+        }
+
+        .main_icon_logo_phoneText {
+            font-size: 7px;
+        }
+
+        .footer_FM1_text {
+            font-size: 5px;
+        }
+
+        .link_FM2Text_p {
+            font-size: 5px;
+        }
+
+        .phone_footer {
+            max-width: 390px;
+        }
+
+        .footer_slade1_icon_text h1 {
+            font-size: 7px;
+        }
+
+        .footer_slade1_icon_text {
+            width: 102px;
+        }
+
+        .phone_footer_slade2_h h1 {
+            font-size: 7px;
+        }
+
+        .phone_footer_slade3_adres h1 {
+            font-size: 7px;
+        }
+
+        .phone_footer_slade2_namber1 {
+            font-size: 7px;
+        }
+
+        .phone_footer_slade2_namber2 {
+            font-size: 7px;
+        }
+
+        .phone_footer_slade3_ulisa {
+            font-size: 7px;
+        }
+
+        .phone_footer_slade2_link a {
+            font-size: 5px;
+        }
+
+        .footer_slade1_icon {
+            width: 30px;
+            height: 27px;
+        }
+
+        .footer_boxs_links_box_l {
+            width: 15.3px;
+            height: 14.2px;
+        }
+
+        .footer_boxs_links_box_plot {
+            width: 30px;
+            height: 27px;
+        }
+
+        .phone_footer_slade2 {
+            width: 98px;
+        }
+
+        .phone_footer_upon p {
+            font-size: 5px;
+        }
+
+        .base_content_slade1 {
+            width: 364.4px;
+        }
+
+        .slide1_text .Lang-standart84_1 {
+            font-size: 42.5px;
+        }
+
+        .slide1_text {
+            width: 342.4px;
+        }
+
+        .base_content_slade3 {
+            width: 357px;
+        }
+
+        .Lang-standart27 {
+            font-size: 24px;
+        }
+
+        .news_list_a {
+            width: 162px;
+        }
+
+        .news_block_img {
+            width: 162px;
+            height: 164px;
+        }
+
+        .news_title {
+            height: 28.4px;
+        }
+
+        .news_title_h3 {
+            font-size: 9.5px;
+        }
+
+        .news-KAI-block p {
+            font-size: 5px;
+        }
+
+        .news-date {
+            font-size: 5px;
+        }
+
+        .about_IMO {
+            width: 357px;
+            margin-top: 30px;
+        }
+        .box_aboutIMO_ImgSVG{
+            margin-top: 24px;
+        }
+        .Lang-standart32 {
+            font-size: 20px;
+        }
+        .Lang-standart33 {
+            font-size: 8px;
+        }
+
+        .box_aboutIMO_text_Inf_INGSVG {
+            width: 84px;
+            height: 84px;
+        }
+
+        .box_aboutIMO_ImgSVG_background {
+            width: 357px;
+            height: 87px;
+            border-radius: 19px;
+        }
+        .Lang-standart34{
+            font-size: 14px;
+        }
+
+    }
+    @media screen and (max-width:480px) {
+        .Phone_Head{
+            width: 440px;
+        }
+        .phone_header_home_ico {
+            width: 44px;
+            height: 44px;
+        }
+
+        .phone_header_question_ico {
+            width: 44px;
+            height: 44px;
+        }
+
+        .phone_header_notice_ico {
+            width: 44px;
+            height: 44px;
+        }
+
+        .phone_header_presen_ico {
+            width: 44px;
+            height: 44px;
+        }
+
+        .main_icon_logo_flexbox {
+            width: 48px;
+            height: 48px;
+        }
+
+        .main_icon_logo {
+            width: 48px;
+        }
+
+/*///////////////////////////////////////////////////////////////////*/
+
+
+        .footer_mainText {
+            font-size: 8px;
+        }
+
+        .helpText {
+            font-size: 8px;
+        }
+
+        .Memo_box_textInf_text {
+            font-size: 8px;
+        }
+
+        .main_icon_logo_phoneText {
+            font-size: 8px;
+        }
+
+        .footer_FM1_text {
+            font-size: 5.3px;
+        }
+
+        .link_FM2Text_p {
+            font-size: 5.3px;
+        }
+
+        .phone_footer {
+            max-width: 440px;
+        }
+
+        .footer_slade1_icon_text h1 {
+            font-size: 8px;
+        }
+
+        .footer_slade1_icon_text {
+            width: 115px;
+        }
+
+        .phone_footer_slade2_h h1 {
+            font-size: 8px;
+        }
+
+        .phone_footer_slade3_adres h1 {
+            font-size: 8px;
+        }
+
+        .phone_footer_slade2_namber1 {
+            font-size: 8px;
+        }
+
+        .phone_footer_slade2_namber2 {
+            font-size: 8px;
+        }
+
+        .phone_footer_slade3_ulisa {
+            font-size: 8px;
+        }
+
+        .phone_footer_slade2_link a {
+            font-size: 5.3px;
+        }
+
+        .footer_slade1_icon {
+            width: 33.5px;
+            height: 31px;
+        }
+
+        .footer_boxs_links_box_l {
+            width: 17.4px;
+            height: 16px;
+        }
+
+        .footer_boxs_links_box_plot {
+            width: 33.4px;
+            height: 31px;
+        }
+
+        .phone_footer_slade2 {
+            width: 111px;
+        }
+
+        .phone_footer_upon p {
+            font-size: 5.3px;
+        }
+
+        .base_content_slade1 {
+            width: 409.4px;
+        }
+
+        .slide1_text .Lang-standart84_1 {
+            font-size: 48px;
+        }
+
+        .slide1_text {
+            width: 387px;
+        }
+
+        .base_content_slade3 {
+            width: 403px;
+        }
+
+        .Lang-standart27 {
+            font-size: 27px;
+        }
+
+        .news_list_a {
+            width: 183px;
+        }
+
+        .news_block_img {
+            width: 183px;
+            height: 185.4px;
+        }
+
+        .news_title {
+            height: 32px;
+        }
+
+        .news_title_h3 {
+            font-size: 11px;
+        }
+
+        .news-KAI-block p {
+            font-size: 5.4px;
+        }
+
+        .news-date {
+            font-size: 5.4px;
+        }
+
+        .about_IMO {
+            width: 403px;
+            margin-top: 33.4px;
+        }
+        .box_aboutIMO_ImgSVG{
+            margin-top: 26.7px;
+        }
+        .Lang-standart32 {
+            font-size: 23px;
+        }
+        .Lang-standart33 {
+            font-size: 9.4px;
+        }
+
+        .box_aboutIMO_text_Inf_INGSVG {
+            width: 95px;
+            height: 95px;
+        }
+
+        .box_aboutIMO_ImgSVG_background {
+            width: 302px;
+            height: 74px;
+            border-radius: 16px;
+        }
+        .Lang-standart34{
+            font-size: 12px;
+        }
+    }
+    @media screen and (max-width:360px) {
+        .Phone_Head{
+            width: 330px;
+        }
+        .phone_header_home_ico {
+            width: 33px;
+            height: 33px;
+        }
+
+        .phone_header_question_ico {
+            width: 33px;
+            height: 33px;
+        }
+
+        .phone_header_notice_ico {
+            width: 33px;
+            height: 33px;
+        }
+
+        .phone_header_presen_ico {
+            width: 33px;
+            height: 33px;
+        }
+
+        .main_icon_logo_flexbox {
+            width: 36px;
+            height: 36px;
+        }
+
+        .main_icon_logo {
+            width: 36px;
+        }
+
+
+/*///////////////////////////////////////////////////////////////////*/
+
+
+        .footer_mainText {
+            font-size: 6px;
+        }
+
+        .helpText {
+            font-size: 6px;
+        }
+
+        .Memo_box_textInf_text {
+            font-size: 6px;
+        }
+
+        .main_icon_logo_phoneText {
+            font-size: 6px;
+        }
+
+        .footer_FM1_text {
+            font-size: 4px;
+        }
+
+        .link_FM2Text_p {
+            font-size: 4px;
+        }
+
+        .phone_footer {
+            max-width: 330px;
+        }
+
+        .footer_slade1_icon_text h1 {
+            font-size: 6px;
+        }
+
+        .footer_slade1_icon_text {
+            width: 86px;
+        }
+
+        .phone_footer_slade2_h h1 {
+            font-size: 6px;
+        }
+
+        .phone_footer_slade3_adres h1 {
+            font-size: 6px;
+        }
+
+        .phone_footer_slade2_namber1 {
+            font-size: 6px;
+        }
+
+        .phone_footer_slade2_namber2 {
+            font-size: 6px;
+        }
+
+        .phone_footer_slade3_ulisa {
+            font-size: 6px;
+        }
+
+        .phone_footer_slade2_link a {
+            font-size: 4px;
+        }
+
+        .footer_slade1_icon {
+            width: 25.13px;
+            height: 23px;
+        }
+
+        .footer_boxs_links_box_l {
+            width: 13px;
+            height: 12px;
+        }
+
+        .footer_boxs_links_box_plot {
+            width: 25px;
+            height: 23px;
+        }
+
+        .phone_footer_slade2 {
+            width: 83px;
+        }
+
+        .phone_footer_upon p {
+            font-size: 4px;
+        }
+
+        .base_content_slade1 {
+            width: 307px;
+        }
+
+        .slide1_text .Lang-standart84_1 {
+            font-size: 36px;
+        }
+
+        .slide1_text {
+            width: 290px;
+        }
+
+        .base_content_slade3 {
+            width: 302px;
+        }
+
+        .Lang-standart27 {
+            font-size: 20px;
+        }
+
+        .news_list_a {
+            width: 137px;
+        }
+
+        .news_block_img {
+            width: 137px;
+            height: 139px;
+        }
+
+        .news_title {
+            height: 24px;
+        }
+
+        .news_title_h3 {
+            font-size: 8px;
+        }
+
+        .news-KAI-block p {
+            font-size: 4px;
+        }
+
+        .news-date {
+            font-size: 4px;
+        }
+
+        .about_IMO {
+            width: 302px;
+            margin-top: 25px;
+        }
+        .box_aboutIMO_ImgSVG{
+            margin-top: 20px;
+        }
+        .Lang-standart32 {
+            font-size: 17px;
+        }
+        .Lang-standart33 {
+            font-size: 7px;
+        }
+
+        .box_aboutIMO_text_Inf_INGSVG {
+            width: 71px;
+            height: 71px;
+        }
+
+        .box_aboutIMO_ImgSVG_background {
+            width: 302px;
+            height: 74px;
+            border-radius: 16px;
+        }
+        .Lang-standart34{
+            font-size: 12px;
+        }
+    }
+    @media screen and (max-width:320px) {
+        .phone_header_home_ico {
+            width: 33px;
+            height: 33px;
+        }
+
+        .phone_header_question_ico {
+            width: 33px;
+            height: 33px;
+        }
+
+        .phone_header_notice_ico {
+            width: 33px;
+            height: 33px;
+        }
+
+        .phone_header_presen_ico {
+            width: 33px;
+            height: 33px;
+        }
+
+        .main_icon_logo_flexbox {
+            width: 36px;
+            height: 36px;
+        }
+
+        .main_icon_logo {
+            width: 36px;
+        }
+
+        .footer_mainText {
+            font-weight: 500;
+            font-size: 6px;
+            line-height: 134.69%;
+            text-align: right;
+            letter-spacing: 0.03em;
+        }
+
+        .helpText {
+            font-weight: 400;
+            font-size: 6px;
+            line-height: 134.69%;
+            text-align: right;
+            letter-spacing: 0.03em;
+        }
+
+        .Memo_box_textInf_text {
+            font-size: 6px;
+            font-weight: 500;
+
+        }
+
+        .main_icon_logo_phoneText {
+            font-weight: 400;
+            font-size: 6px;
+            font-family: var(--font-averta-cy);
+            color: #000;
+            margin-left: 15px;
+        }
+
+        .footer_FM1_text {
+            color: #B7B7B7;
+            font-size: 4px;
+            font-family: var(--font-inter);
+        }
+
+        .link_FM2Text_p {
+            color: #B7B7B7;
+            font-size: 4px;
+            font-family: var(--font-inter);
+        }
+    }
+
+    .link_FM2Text_p {
+        color: #B7B7B7;
+        font-family: var(--font-inter);
+    }
+    .footer_FM1_text {
+        color: #B7B7B7;
+        font-family: var(--font-inter);
+    }
+
+    .main_icon_logo_phoneText {
+        font-weight: 400;
+        font-family: var(--font-averta-cy);
+        color: #000;
+        margin-left: 15px;
+    }
+
+    .Memo_box_textInf_text {
+        
+        font-weight: 500;
+
+    }
+
+    .helpText {
+        font-weight: 400;
+        line-height: 134.69%;
+        text-align: right;
+        letter-spacing: 0.03em;
+    }
+
+
+    .footer_mainText {
+        font-weight: 500;
+        line-height: 134.69%;
+        text-align: right;
+        letter-spacing: 0.03em;
+    }
+
+    .box_aboutIMO_ImgSVG_background{
+        width: 100%;
+    }
+    .Lang-standart34 {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        line-height: 149.52%;
+        color: #FFFFFF;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.64);
+    }
+
+    .post-last4phone {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 10px;
+    }
+
+    .Lang-standart33 {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 300;
+        line-height: 182.1%;
+        color: #383838;
+    }
+
+    .Lang-standart32 {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        line-height: 116.1%;
+        color: #000212;
+
+    }
+
+    .box_aboutIMO_text_Inf {
+        align-content: flex-start;
+    }
+
+    .box_aboutIMO_text_boxH1 {
+        margin-bottom: 5px;
+    }
+
+    .phone_header_center {
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 10%;
+
+    }
+
+    .phone_header_home {
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .phone_footer_slade2_link a {
+        font-style: normal;
+        font-weight: 500;
+
+        line-height: 134.69%;
+        /* or 5px */
+
+        letter-spacing: 0.03em;
+        text-decoration-line: underline;
+
+        color: #2298FF;
+    }
+
+    .phone_footer_slade1_upon {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: flex-start;
+        justify-content: space-between;
+
+    }
+
+    .phone_footer_slade3 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .phone_footer_slade3_ulisa {
+        width: 80%;
+    }
+
+    .phone_footer_slade2_namber1,
+    .phone_footer_slade2_namber2 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+
+    h1 {
+        margin-bottom: 0;
+    }
+
+    .phone_footer_slade2_link {
+        margin-top: -15%;
+    }
+
+    .Lang-standart84_1 {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        line-height: 116.1%;
+        color: #000212;
+    }
+
+    .Lang-standart27 {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        line-height: 116.1%;
+        color: #000212;
+    }
+
+    .news_block_img {
+        border-radius: 7px;
+        margin-bottom: 5px;
+    }
+
+    .news_title_h3 {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        line-height: 149.52%;
+        color: #383838;
+    }
+
+    .news-KAI-block p {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        line-height: 149.52%;
+        color: #383838;
+    }
+
+    .news-date {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        line-height: 149.52%;
+        color: #383838;
+    }
+    .weHAve_new_h1{
+        text-align: center;
+        margin-bottom: 0px;
+    }
+</style>
+
+</html>
